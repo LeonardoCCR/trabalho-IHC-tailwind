@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Corridas</title>
+    <link rel="shortcut icon" href="img/navigation.png" type="image/x-icon">
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+    <!-- Tela de Login e Cadastro -->
+    <section id="login" class="p-6 max-w-md mx-auto bg-white shadow-lg rounded-xl mt-10">
+        <h1 class="text-2xl font-bold mb-4">Login</h1>
+        <input type="email" placeholder="E-mail" class="block w-full mb-2 p-2 border rounded-lg" />
+        <input type="password" placeholder="Senha" class="block w-full mb-4 p-2 border rounded-lg" />
+        <button class="w-full bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600">Entrar</button>
+        <p class="text-center mt-4">ou</p>
+        <button class="w-full bg-gray-300 p-2 rounded-lg hover:bg-gray-400 mt-2">Login com Biometria</button>
+
+        <h2 class="text-xl font-semibold mt-6">Cadastro</h2>
+        <input type="text" placeholder="Nome Completo" class="block w-full mb-2 p-2 border rounded-lg" />
+        <input type="email" placeholder="E-mail" class="block w-full mb-2 p-2 border rounded-lg" />
+        <input type="tel" placeholder="Telefone" class="block w-full mb-4 p-2 border rounded-lg" />
+        <textarea placeholder="Necessidades especiais" class="block w-full p-2 border rounded-lg mb-4"></textarea>
+        <button class="w-full bg-green-500 text-white p-2 rounded-lg hover:bg-green-600">Cadastrar</button>
+    </section>
+
+    <!-- Tela Inicial/Dashboard -->
+    <section id="dashboard" class="p-6 max-w-2xl mx-auto bg-white shadow-lg rounded-xl mt-10">
+        <h1 class="text-2xl font-bold mb-4">Dashboard</h1>
+        <button class="w-full bg-green-500 text-white p-2 rounded-lg mb-4 hover:bg-green-600">Solicitar Corrida</button>
+        <div class="grid grid-cols-2 gap-4">
+            <button class="bg-gray-300 p-2 rounded-lg hover:bg-gray-400">Hospitais Próximos</button>
+            <button class="bg-gray-300 p-2 rounded-lg hover:bg-gray-400">Destino Cadastrado</button>
+        </div>
+        <h2 class="text-xl font-semibold mt-6">Histórico de Corridas Recentes</h2>
+        <ul class="list-disc pl-6">
+            <li>Destino: Rua ABC - R$ 25,00</li>
+            <li>Destino: Hospital XYZ - R$ 40,00</li>
+        </ul>
+    </section>
+
+    <!-- Tela de Solicitação de Corrida -->
+    <section id="solicitacao" class="p-6 max-w-lg mx-auto bg-white shadow-lg rounded-xl mt-10">
+        <h1 class="text-xl font-bold mb-4">Solicitar Corrida</h1>
+        <input type="text" placeholder="Informe seu destino" class="block w-full mb-4 p-2 border rounded-lg" />
+        <button class="w-full bg-blue-500 text-white p-2 rounded-lg mb-2 hover:bg-blue-600">Comando de Voz</button>
+        <button class="w-full bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600">Mapa Interativo</button>
+        <p class="text-red-600 font-semibold mt-4">Botão de Emergência</p>
+        <p>Estimativa: 15 min, R$ 20,00</p>
+    </section>
+
+    <!-- Tela de Confirmação de Corrida -->
+    <section id="confirmacao" class="p-6 max-w-lg mx-auto bg-white shadow-lg rounded-xl mt-10">
+        <h1 class="text-xl font-bold mb-4">Confirmação de Corrida</h1>
+        <p>Motorista: João da Silva</p>
+        <p>Veículo: Sedan Preto - Placa XYZ1234</p>
+        <p>Visualização da Rota no Mapa</p>
+        <button class="w-full bg-red-500 text-white p-2 rounded-lg mt-4 hover:bg-red-600">Cancelar Corrida</button>
+    </section>
+
+    <!-- Tela Durante a Corrida -->
+    <section id="corrida" class="p-6 max-w-lg mx-auto bg-white shadow-lg rounded-xl mt-10">
+        <h1 class="text-xl font-bold mb-4">Progresso da Viagem</h1>
+        <p>Mapa em Andamento...</p>
+        <button class="w-full bg-red-500 text-white p-2 rounded-lg mt-4 hover:bg-red-600">Alterar Destino</button>
+    </section>
+
+    <!-- Tela de Pagamento -->
+    <section id="pagamento" class="p-6 max-w-lg mx-auto bg-white shadow-lg rounded-xl mt-10">
+        <h1 class="text-xl font-bold mb-4">Pagamento</h1>
+        <p>Valor Total: R$ 30,00</p>
+        <p>Distância: 10 km</p>
+        <button class="w-full bg-green-500 text-white p-2 rounded-lg mb-2 hover:bg-green-600">Pagar com Cartão</button>
+        <button class="w-full bg-gray-300 p-2 rounded-lg hover:bg-gray-400">Carteira Digital</button>
+    </section>
+
+    <!-- Tela de Configurações do Perfil -->
+    <section id="configuracoes" class="p-6 max-w-lg mx-auto bg-white shadow-lg rounded-xl mt-10">
+        <h1 class="text-xl font-bold mb-4">Configurações do Perfil</h1>
+        <button class="w-full bg-blue-500 text-white p-2 rounded-lg mb-2 hover:bg-blue-600">Editar Informações</button>
+        <button class="w-full bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600">Gerenciar Formas de
+            Pagamento</button>
+    </section>
+
+    <!-- Tela de Treinamento do Motorista -->
+    <section id="treinamento" class="p-6 max-w-lg mx-auto bg-white shadow-lg rounded-xl mt-10">
+        <h1 class="text-xl font-bold mb-4">Treinamento do Motorista</h1>
+        <p>Progresso: 50%</p>
+        <p>Certificação Pendente</p>
+    </section>
+
+    <!-- Tela de Relatórios e Histórico -->
+    <section id="relatorios" class="p-6 max-w-lg mx-auto bg-white shadow-lg rounded-xl mt-10">
+        <h1 class="text-xl font-bold mb-4">Relatórios e Histórico</h1>
+        <ul class="list-disc pl-6">
+            <li>Corrida: R$ 25,00 - Destino ABC</li>
+            <li>Corrida: R$ 40,00 - Hospital XYZ</li>
+        </ul>
+    </section>
+
+    <!-- Tela de Suporte e Ajuda -->
+    <section id="suporte" class="p-6 max-w-lg mx-auto bg-white shadow-lg rounded-xl mt-10">
+        <h1 class="text-xl font-bold mb-4">Suporte e Ajuda</h1>
+        <p>Central de Atendimento: 0800 123 456</p>
+        <p>FAQ Disponível</p>
+        <button class="w-full bg-gray-300 p-2 rounded-lg hover:bg-gray-400 mt-4">Enviar Feedback</button>
+    </section>
+
+</body>
+
+</html>
